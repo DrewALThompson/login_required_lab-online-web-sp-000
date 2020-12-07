@@ -11,4 +11,8 @@ class SessionsController < ApplicationController
       redirect_to :welcome
     end
   end
+  
+  def destroy
+    session.delete :name 
+  end 
 end
