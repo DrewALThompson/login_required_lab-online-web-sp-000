@@ -1,5 +1,5 @@
 class SecretsController < ApplicationController
-  before_
+  before_action
   
   def  welcome
   end
