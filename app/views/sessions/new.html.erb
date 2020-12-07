@@ -1,4 +1,5 @@
 <%= form_tag session_path %>
-<label>Name</label>
-<%= field_form_tag 'name' %>
-<%= submit_tag%>
+  <label>Name</label>
+  <%= text_field_tag 'name' %>
+  <%= submit_tag 'login' %>
+<%end%>
