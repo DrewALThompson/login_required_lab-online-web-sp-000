@@ -6,4 +6,7 @@ class ApplicationController < ActionController::Base
   def current_user
     @user = session[:name] || nil
   end
+  
+  def require_login
+    
 end
