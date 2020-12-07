@@ -5,7 +5,6 @@ class SecretsController < ApplicationController
   end
   
   def show
-    redirect_to '/login'
   end 
 
 end
