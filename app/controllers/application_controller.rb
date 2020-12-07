@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end
   
   def require_login
-    redirect_to '/' 
+    redirect_to '/login' if current_user == nil 
   end
 end
