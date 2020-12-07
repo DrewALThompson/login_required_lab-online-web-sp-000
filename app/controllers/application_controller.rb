@@ -8,5 +8,6 @@ class ApplicationController < ActionController::Base
   end
   
   def require_login
-    
+    return head(:forbidden) unless current_user != nil
+  end
 end
